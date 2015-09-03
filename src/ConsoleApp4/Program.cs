@@ -22,11 +22,6 @@ namespace ConsoleApp4
     }
     public sealed class SampleEventSource : EventSource
     {
-        public bool ThrowingEtwExceptionIsEnabled()
-        {
-            return base.IsEnabled();
-        }
-
         [Event(2, Level = EventLevel.Warning, Opcode = EventOpcode.Info,
             Message = "Throwing an exception.")]
         public void ThrowingEtwException()
