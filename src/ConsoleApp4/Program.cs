@@ -28,7 +28,7 @@ namespace ConsoleApp4
         }
 
         [Event(2, Level = EventLevel.Warning, Opcode = EventOpcode.Info,
-            Message = "Throwing an exception. Source: {0}. Exception details: {1}")]
+            Message = "Throwing an exception.")]
         public void ThrowingEtwException()
         {
             WriteEvent(2);
